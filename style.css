@@ -1,0 +1,155 @@
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verified: hsl(333, 80%, 67%);
+  --box-background: hsl(300, 43%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --span_bac: rgb(243, 215, 215);
+}
+
+body {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+/* FIRST DIVISION */
+.review {
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  display: block;
+  background-color: var(--span_bac);
+  margin: 10px;
+  padding: 10px 40px 10px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.a {
+  position: relative;
+}
+.one {
+  right: 80px;
+}
+.two {
+  right: 40px;
+}
+.detail {
+  width: 200px;
+}
+.detail h2 {
+  color: var(--box-background);
+}
+
+.detail h2 {
+  font-size: 40px;
+  font-weight: 600px;
+  margin-bottom: 15px;
+}
+.detail p {
+  font-size: 12px;
+  color: hsl(300, 43%, 22%);
+  font-size: 15px;
+}
+/* --SECOND DIVISION--- */
+
+.partB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.partB p {
+  position: relative;
+  top: 2px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.boxA {
+  background-color: var(--box-background);
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 30px;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 14px;
+}
+.boxB {
+  position: relative;
+  top: 25px;
+  background-color: var(--box-background);
+  color: hsl(0, 0%, 100%);
+  /* margin: 5px; */
+  border: 3px solid white;
+  padding: 35px;
+  border-radius: 10px;
+  padding-bottom: 14px;
+}
+
+.boxC {
+  position: relative;
+  top: 45px;
+  background-color: var(--box-background);
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 14px;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.partB img {
+  position: relative;
+  left: 10px;
+  bottom: 8px;
+  border-radius: 50px;
+  size: 10px;
+}
+h4 {
+  position: relative;
+  text-align: left;
+  left: 100px;
+  top: -60px;
+  font-size: 13px;
+}
+
+.V {
+  /* text-align: left; */
+  color: hsl(333, 80%, 67%);
+}
+@media (max-width: 640px) {
+  .review {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .a {
+    position: unset;
+  }
+  .partB {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .partB img {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h4 {
+    position: unset;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
